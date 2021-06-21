@@ -1,0 +1,20 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solutions
+ *  Copyright 2021 Kevin Schiffli
+ */
+@startuml
+'https://plantuml.com/class-diagram
+Class App {
+--Inputs--
++getNames()
+--Outputs--
+-fileWriter(sortedNames)
+}
+
+Class NameSorter {
+--Computations--
+sortNames(names)
+}
+
+App -> NameSorter
+@enduml
